@@ -22,7 +22,7 @@ module.exports.isCaptchaVerified = async (req) => {
     body = JSON.parse(body);
 
     if (body.success !== undefined && !body.success) {
-      req.flash("error", "Captcha Verifiction Failed!");
+      //req.flash("error", "Captcha Verifiction Failed!");
       return false;
     }
   });
